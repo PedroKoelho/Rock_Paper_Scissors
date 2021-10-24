@@ -28,7 +28,7 @@ function playerPlay() {
     let jogadaPlayer = window.prompt('Introduz a tua jogada: rock, paper ou scissors');
     jogadaPlayer = jogadaPlayer.toLowerCase();
     
-    return jogadaPlayer; 
+    return jogadaPlayer;
 
 }
 
@@ -49,13 +49,41 @@ function playRound () {
     console.log(`Player » ${playerSelection}  Computer » ${computerSelection}`);
 
     // 5. retornar quem venceu a jogada
-     if (computerSelection === 'rock' && playerSelection === 'scissors' ||
-        computerSelection === 'scissors' && playerSelection === 'paper' ||
-        computerSelection === 'paper' && playerSelection === 'rock') {
+     if (computerSelection === 'rock' && playerSelection === 'scissors') {
+        //console.log('You Lose! Rock beats Scissors');
         return 'derrota';
-    } else if (playerSelection === 'rock' && computerSelection === 'scissors' ||
-        playerSelection === 'paper' && computerSelection === 'rock' ||
-        playerSelection === 'scissors' && computerSelection === 'paper') {
+    } else if (computerSelection === 'rock' && playerSelection === 'paper') {
+        //console.log('You Win! Paper beats Rock');
+        return 'vitoria';
+    } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
+        //console.log('You Win! Rock beats Scissors');
+        return 'vitoria';
+    } else if (playerSelection === 'rock' && computerSelection === 'paper') {
+        //console.log('You Loose! Paper beats Rock');
+        return 'derrota';
+    } else if (computerSelection === 'paper' && playerSelection === 'scissors') {
+        //console.log('You Win! Scissors beats Paper');
+        return 'vitoria';
+    } else if (computerSelection === 'paper' && playerSelection === 'rock') {
+        //console.log('You Loose! Paper beats Rock');
+        return 'vitoria';
+    } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
+        //console.log('You Loose! Scissors beats Paper');
+        return 'derrota';
+    } else if (playerSelection === 'paper' && computerSelection === 'rock') {
+        //console.log('You Win! Paper beats Rock');
+        return 'vitoria';
+    } else if (computerSelection === 'scissors' && playerSelection === 'paper') {
+        //console.log('You Loose! Scissors beats Paper');
+        return 'derrota';
+    } else if (computerSelection === 'scissors' && playerSelection === 'rock') {
+        //console.log('You Win! Rock beats Scissors');
+        return 'vitoria';
+    } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
+        //console.log('You Win! Scissors beats Paper');
+        return 'vitoria';
+    } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
+        //console.log('You Loose! Rock beats Scissors');
         return 'vitoria';
     } else {
         //console.log('That´s a Tie!');
