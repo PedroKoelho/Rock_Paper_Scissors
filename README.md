@@ -1,2 +1,2 @@
 # ROCK PAPER SCISSORS
-Odin Assignmentgit
+Odin Assignment
