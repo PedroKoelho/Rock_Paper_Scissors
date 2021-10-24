@@ -1,3 +1,4 @@
+// VERSÃO 1.0
 // 0. declarar as variáveis
 // * foram mudadas para dentro da  function playRound
 // let playerSelection = 'rock';
